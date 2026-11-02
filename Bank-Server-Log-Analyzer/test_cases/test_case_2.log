@@ -1,0 +1,5 @@
+[2026-09-02 11:00:00] [ERROR] [SESSION_20] [unknown] [198.51.100.9] [AUTH] - Failed login attempt for user admin
+[2026-09-02 11:00:10] [ERROR] [SESSION_21] [unknown] [198.51.100.9] [AUTH] - Failed login attempt for user admin
+[2026-09-02 11:00:20] [ERROR] [SESSION_22] [unknown] [198.51.100.9] [AUTH] - Failed login attempt for user admin
+[2026-09-02 11:01:00] [CRITICAL] [SESSION_99] [system] [10.0.0.9] [BACKUP] - Backup failed
+this line is malformed and should be skipped

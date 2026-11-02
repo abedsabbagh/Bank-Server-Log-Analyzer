@@ -1,0 +1,16 @@
+[2026-08-15 08:00:00] [INFO] [SESSION_1001] [admin] [10.0.0.1] [AUTH] - Successful login for user admin
+[2026-08-15 08:01:00] [INFO] [SESSION_1001] [admin] [10.0.0.1] [QUERY] - SELECT * FROM accounts
+[2026-08-15 08:02:00] [WARNING] [SESSION_1001] [admin] [10.0.0.1] [QUERY] - Slow query SELECT * FROM audit_log took 2.5 s
+[2026-08-15 08:03:00] [INFO] [SESSION_1001] [admin] [10.0.0.1] [TRANSACTION] - Deposit amount $1,250.50 completed
+[2026-08-15 08:04:00] [INFO] [SESSION_1001] [admin] [10.0.0.1] [TRANSACTION] - Withdrawal amount=200.00 completed
+[2026-08-15 08:05:00] [WARNING] [SESSION_1001] [admin] [10.0.0.1] [TRANSACTION] - Transaction declined due to insufficient funds
+[2026-08-15 08:06:00] [INFO] [SESSION_1001] [admin] [10.0.0.1] [AUTH] - User logged out
+[2026-08-15 08:07:00] [ERROR] [SESSION_2001] [root] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 08:07:10] [ERROR] [SESSION_2002] [root] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 08:07:20] [ERROR] [SESSION_2003] [root] [203.0.113.55] [AUTH] - Failed login attempt for user root (invalid password)
+[2026-08-15 09:00:00] [INFO] [SESSION_3001] [teller01] [10.0.0.2] [AUTH] - Login successful
+[2026-08-15 09:01:00] [INFO] [SESSION_3001] [teller01] [10.0.0.2] [QUERY] - UPDATE accounts SET balance = 100
+[2026-08-15 09:02:00] [INFO] [SESSION_3001] [teller01] [10.0.0.2] [QUERY] - INSERT INTO audit_log VALUES ('x')
+[2026-08-15 09:03:00] [INFO] [SESSION_3001] [teller01] [10.0.0.2] [QUERY] - DELETE FROM temp_records
+[2026-08-15 09:04:00] [CRITICAL] [SESSION_3001] [teller01] [10.0.0.2] [TRANSACTION] - Transaction rollback due to system error
+[2026-08-15 09:05:00] [CRITICAL] [SESSION_9999] [system] [10.0.0.10] [BACKUP] - Backup failed: disk unavailable

@@ -1,0 +1,8 @@
+[2026-09-01 10:00:00] [INFO] [SESSION_1] [user1] [192.168.1.10] [AUTH] - Successful login
+[2026-09-01 10:01:00] [INFO] [SESSION_1] [user1] [192.168.1.10] [QUERY] - SELECT name FROM customers
+[2026-09-01 10:02:00] [WARNING] [SESSION_1] [user1] [192.168.1.10] [QUERY] - Slow query SELECT * FROM transactions took 900 ms
+[2026-09-01 10:03:00] [INFO] [SESSION_1] [user1] [192.168.1.10] [TRANSACTION] - Deposit 300.00 completed
+[2026-09-01 10:03:15] [INFO] [SESSION_1] [user1] [192.168.1.10] [TRANSACTION] - Withdrawal 50.00 completed
+[2026-09-01 10:03:30] [WARNING] [SESSION_1] [user1] [192.168.1.10] [TRANSACTION] - Transaction declined due to insufficient funds
+[2026-09-01 10:03:45] [CRITICAL] [SESSION_1] [user1] [192.168.1.10] [TRANSACTION] - Transaction rollback due to system error
+[2026-09-01 10:04:00] [INFO] [SESSION_1] [user1] [192.168.1.10] [AUTH] - Logout
